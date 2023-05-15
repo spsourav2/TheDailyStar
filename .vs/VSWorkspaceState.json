@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\HrmsWebApiCore",
+    "\\HrmsWebApiCore\\WebApiCore",
+    "\\HrmsWebApiCore\\WebApiCore\\DbContext",
+    "\\HrmsWebApiCore\\WebApiCore\\DbContext\\Addition",
+    "\\HrmsWebApiCore\\WebApiCore\\DbContext\\GL Integration",
+    "\\HrmsWebApiCore\\WebApiCore\\DbContext\\Security",
+    "\\ReportApi"
+  ],
+  "SelectedNode": "\\HrmsWebApiCore\\WebApiCore\\DbContext\\GL Integration\\GLIntegrationDB.cs",
+  "PreviewInSolutionExplorer": false
+}

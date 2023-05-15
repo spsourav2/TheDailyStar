@@ -1,0 +1,67 @@
+<div class="p-3">
+  <!-- <h4 class="font-weight-bold py-3 mb-4">
+      Dashboard
+      <div class="text-muted text-tiny mt-1"><small class="font-weight-normal">Today is {{myDate}}</small></div>
+    </h4> -->
+
+    <div class="row">
+      <div class="col-md-8 row">
+      <div class="col-md-6">
+        <div class="card employee">
+            <div class="card-body">
+                <h3 class="mt-1 text-center "><span class="fw-bold text-white">Total Employee</span></h3>
+                <h4 class="text-center text-white">{{employeeCounts}}</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6" >
+      <div class="card leave">
+          <div class="card-body">
+              <h3 class="mt-1 text-center "><span class="fw-bold text-white">Total Leave</span></h3>
+            <h4 class="text-center text-white">{{leaveCounts}}</h4>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-6" >
+      <div class="card absent">
+          <div class="card-body">
+            <h3 class="mt-1 text-center "><span class="fw-bold text-white">Absent Today</span></h3>
+            <h4 class="text-center text-white">{{absentCounts}}</h4>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-md-6" >
+    <div class="card late">
+        <div class="card-body">
+          <h3 class="mt-1 text-center "><span class="fw-bold text-white">Late Today</span></h3>
+            <h4 class="text-center text-white">{{getAllLateComer}}</h4>
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-md-4 row">
+    <div class="col-md-12">
+      <div class="row" >
+          <!-- <div class="col-md-12">
+              <canvas id="canvas" class="pie">{{chart}} </canvas>
+          </div> -->
+
+          <div class="wrapper">
+            <canvas id="canvas" width="76" height="65">{{chart}}</canvas>
+          </div>
+          <!-- <div class="col-md-3 col-sm-3" style="margin-top: 20px;">
+
+          </div> -->
+      </div>
+  </div>
+  </div>
+    </div>
+  </div>
+
+
+
+
+

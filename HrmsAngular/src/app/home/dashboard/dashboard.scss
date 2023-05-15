@@ -1,0 +1,77 @@
+
+.employee {
+  background: #6994b1;
+  height: 135px;
+  // margin-right: 2px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.employee:hover {
+  background: rgb(3, 100, 55);
+  box-shadow: 2px 3px 10px 2px;
+  transition: 0.3s;
+}
+
+.leave {
+  background: #c9a1da;
+  height: 135px;
+  // margin-right: 2px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.leave:hover {
+  background: rgb(3, 100, 55);
+  box-shadow: 2px 3px 10px 2px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.late {
+  background: #660000;
+  height: 135px;
+  //  margin-right: 2px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.late:hover {
+  background: rgb(3, 100, 55);
+  box-shadow: 2px 3px 10px 2px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.absent{
+  background: #ff3333;
+  height: 135px;
+  //  margin-right: 2px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.absent:hover {
+  background: rgb(3, 100, 55);
+  box-shadow: 2px 3px 10px 2px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.anima,.animacc{
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.pie{
+  width: 550px!important;
+  height: 300px!important;
+  margin-left: -73px!important;
+}
+
+.wrapper {
+  width: 550px!important;
+  height: 300px!important;
+  // border: 1px solid black; /* for demonstration purposes*/
+}
+
