@@ -63,6 +63,7 @@ export class SalarySummaryComponent implements OnInit {
       { ReportId: 153, TypeName: 'Arrear Summary GL' },
       { ReportId: 154, TypeName: 'Summary By Head Bonus' },
       { ReportId: 155, TypeName: 'Payment Summary Bonus' },
+      {ReportId:211,TypeName:'Income Tax Deduct Details'}
 
 
 

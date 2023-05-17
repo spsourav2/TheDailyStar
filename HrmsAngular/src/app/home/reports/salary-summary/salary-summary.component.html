@@ -20,7 +20,7 @@
           </div>
         </div>
 
-        <div *ngIf="[143,144,145,146,147,148,149,150,151,152,153,154,155].includes(formControl['ReportId'].value)"
+        <div *ngIf="[143,144,145,146,147,148,149,150,151,152,153,154,155,211].includes(formControl['ReportId'].value)"
           class="form-group row">
           <label class="col-form-label col-sm-3 ">Select Month</label>
           <div class="col-sm-7">
@@ -35,7 +35,7 @@
           </div>
         </div>
 
-        <div *ngIf="[144,154].includes(formControl['ReportId'].value)" class="form-group row">
+        <div *ngIf="[144,154,211].includes(formControl['ReportId'].value)" class="form-group row">
           <label class="col-form-label col-sm-3 ">Select Salary Head</label>
           <div class="col-sm-7">
             <app-salaryhead-select-list (onChange)="formControl['SalaryHeadID'].setValue($event.id)">
