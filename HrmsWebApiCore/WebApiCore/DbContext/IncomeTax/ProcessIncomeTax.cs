@@ -53,7 +53,7 @@ namespace WebApiCore.DbContext.IncomeTax
                                 try
                                 {
                                     DeleteExistingSalaryAdditional(model, con, tran);
-                                    ProcessEmpIncomeLWP(model, con, tran);
+                                   // ProcessEmpIncomeLWP(model, con, tran);
                                     ProcessEmpIncomeTax(model, con, tran);
                                     ProcessEmpsalaryAdditional(model, con, tran);
                                     tran.Commit();
