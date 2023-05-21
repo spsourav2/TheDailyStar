@@ -47,7 +47,14 @@ export class TaxReportComponent implements OnInit {
       {ReportId:97, TypeName:'Statement of Tax Deduction'},
       {ReportId:98, TypeName:'Statement of Deduction by Period'},
       {ReportId:99, TypeName:'AIT Certificate Envelope'},
+      {ReportId:212, TypeName:'Tax Deduction'},
     ]
+  }
+  onSelectPeriod(period) {
+    this.reportForm.patchValue({
+      PeriodID: period.id,
+      Period: period.id,
+    })
   }
   onSelectBranch(branchId:number){
     this.reportForm.patchValue({
@@ -70,6 +77,7 @@ export class TaxReportComponent implements OnInit {
       this.exporting = false;;
       return;
     }
+    console.log(this.reportForm.value);
     this.rptService.getPayrollReport(this.reportForm.value)
       .subscribe(
         exportedFile => {

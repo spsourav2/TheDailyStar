@@ -18,7 +18,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group row">
+                    <div  *ngIf="![212].includes(formControl['ReportId'].value)"  class="form-group row">
                         <label class="col-form-label col-sm-4">Employee Name</label>
                         <div class="col-sm-8">
                             <app-employee-select-list (onChange)="formControl['EmpCode'].setValue($event.empCode)"></app-employee-select-list>
@@ -26,6 +26,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="form-group row">
+                      <label class="col-form-label col-sm-4 ">Select Month</label>
+                      <div class="col-sm-8">
+                          <app-period-select-list (onChange)="onSelectPeriod($event)"></app-period-select-list>
+                      </div>
+                  </div>
                     <div class="form-group row">
                         <label class="col-form-label col-sm-4">Tax Year</label>
                         <div class="col-sm-8">
