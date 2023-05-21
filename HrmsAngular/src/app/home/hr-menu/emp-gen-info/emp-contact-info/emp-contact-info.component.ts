@@ -62,10 +62,12 @@ export class EmpContactInfoComponent implements OnInit {
   }
 
   getEmpContactInfo(){
+    debugger
     if(this.empCode=="" || this.empCode==null){return;}
     this.empService.getContactInfo(this.compId, this.empCode).subscribe((response:ApiResponse)=>{
       if(response.status){
         this.empContactInfo = response.result as EmpContactInfo
+        console.log("Contact",this.empContactInfo)
         this.getPreDistrict(this.empContactInfo.preDivisionID);
         this.getPerDistrict(this.empContactInfo.perDivisionID);
         this.getPreUpazila(this.empContactInfo.preDistrictID);

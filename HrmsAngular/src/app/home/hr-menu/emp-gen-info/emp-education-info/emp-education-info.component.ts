@@ -126,7 +126,7 @@ export class EmpEducationInfoComponent implements OnInit {
   }
   createForm(){
     this.educationForm = this.frmBuilder.group({
-      id :[, []],
+      id :[0, []],
       empCode :[this.empCode, []],
       name :[, []],
       levelof :[, []],

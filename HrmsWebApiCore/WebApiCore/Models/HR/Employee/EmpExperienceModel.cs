@@ -15,8 +15,8 @@
         public string JobDescription { get; set; }
         public string SupervisorName { get; set; }
         public string SupervisorMobileNo { get; set; }
-        public int CompanyID { get; set; }
-        public int CountryID { get; set; }
-        public int ExprienceType { get; set; }
+        public int? CompanyID { get; set; }
+        public int? CountryID { get; set; }
+        public int? ExprienceType { get; set; }
     }
 }
