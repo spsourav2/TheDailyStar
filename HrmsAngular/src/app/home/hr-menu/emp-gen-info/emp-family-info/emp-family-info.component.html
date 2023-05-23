@@ -226,13 +226,13 @@
                     </div>
                     <div class="form-group row">
                         <label class="col-form-label col-sm-3 ">Percent(%)
-              <!-- <i class="text-danger">*</i> -->
+              <i class="text-danger">*</i>
             </label>
                         <div class="col-sm-4">
                             <input [ngClass]="{'is-invalid': (isSubmitted || f['percentage'].touched || f['percentage'].dirty) && f['percentage'].invalid}" formControlName="percentage" name="percentage" (change)="isAvailablePercantage()" type="text" class="form-control" min="0"
-                                placeholder="0.00%" required>
+                                placeholder="0.00" required>
                             <div *ngIf="(isSubmitted || f['percentage'].touched || f['percentage'].dirty) && f['percentage'].invalid" class="text-danger">
-                                <i *ngIf="f['percentage'].errors.required">Percentage is required</i>
+                                <i *ngIf="f['percentage'].errors.required">Percentage is required . Please write without percentage Sign.</i>
                             </div>
                             <div *ngIf="!availablePercentage" class="text-danger">
                                 <i>Percentage not available</i>
