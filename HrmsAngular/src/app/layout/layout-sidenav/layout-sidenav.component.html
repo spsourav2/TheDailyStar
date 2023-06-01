@@ -167,7 +167,7 @@
             </sidenav-router-link>
         </sidenav-menu>
         <!-- Property -->
-        <!-- <sidenav-menu *ngIf="authService.IsPermittedModule(3)" icon="ion ion-md-speedometer" text="Property" [active]="isMenuActive('/property')" [open]="isMenuOpen('/property')">
+        <sidenav-menu *ngIf="authService.IsPermittedModule(3)" icon="ion ion-md-speedometer" text="Property" [active]="isMenuActive('/property')" [open]="isMenuOpen('/property')">
             <sidenav-router-link *ngIf="authService.IsPermittedPage(35)" route="/property/property-category" [active]="isActive('/property/property-category')">
                 Property Category</sidenav-router-link>
             <sidenav-router-link *ngIf="authService.IsPermittedPage(36)" route="/property/property-name" [active]="isActive('/property/property-name')">Property Name
@@ -183,7 +183,7 @@
             <sidenav-router-link *ngIf="authService.IsPermittedPage(41)" route="/property/report" [active]="isActive('/property/report')">Report
             </sidenav-router-link>
 
-        </sidenav-menu> -->
+        </sidenav-menu>
         <!-- Attendance -->
         <!-- *ngIf="authService.IsPermittedModule(4)" -->
         <sidenav-menu  icon="ion ion-md-speedometer" text="Attendance" [active]="isMenuActive('/attendance')" [open]="isMenuOpen('/attendance')">
